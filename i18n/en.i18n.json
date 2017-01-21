@@ -3,7 +3,7 @@
 	/*Config*/
 	"configName": "Jack UI",
 	"configTitle": "A UI for field robots",
-	"configSubtitle": "Simple an intuitive for all ROS enabled field robots",
+	"configSubtitle": "Simple and intuitive for all ROS enabled field robots",
 	
 	/*Home*/
 	"getstarted": "Get Started",
