@@ -1,0 +1,27 @@
+<template name="profile">
+	<div class="template-profile">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+          {{#autoForm id="updatePicture" collection=Users doc=User type="update"}}
+          <div class="well">
+            {{> afQuickField name="profile.picture"}}
+          </div>
+          {{/autoForm}}
+          {{#autoForm id="updateRobot" collection=Users doc=User type="update"}}
+          <div class="well">
+            {{> afQuickField name="profile.robot"}}
+            <button type="submit" class="btn btn-primary">{{_ "update"}}</button>
+          </div>
+          {{/autoForm}}
+				</div>
+				{{#autoForm id="updateProfile" collection=Users doc=User type="update"}}
+				<div class="col-md-8">
+					{{> afQuickField name='profile' omitFields="profile.picture, profile.robot"}}
+					<button type="submit" class="btn btn-primary">{{_ "update"}}</button>
+				</div>
+				{{/autoForm}}
+			</div>
+		</div>
+	</div>
+</template>

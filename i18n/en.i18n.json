@@ -1,0 +1,77 @@
+{
+
+	/*Config*/
+	"configName": "Jack UI",
+	"configTitle": "A UI for field robots",
+	"configSubtitle": "Simple an intuitive for all ROS enabled field robots",
+	
+	/*Home*/
+	"getstarted": "Get Started",
+	"dashboard": "Go to dashboard",
+	"learn": "Learn more",
+	"intro": "Make Meteor Apps. Fast.",
+	"how": "How It Works",
+	"step_1": "Step 1",
+	"step_1_text": "Create a user account.",
+	"step_2": "Step 2",
+	"step_2_text": "Configure your account to match your ROS topics.",
+	"step_3": "Step 3",
+	"step_3_text": "Get out in the field and change the world!",
+	"section_ipad_header": "A revolutionary way to use field robots",
+	"section_ipad_text": "Get up and running freaky fast",
+	"section_ipad_btn": "Made by Brad",
+	"final_text": "Your robot will be instantly better.",
+	"final_cta": "Lets get going!",
+
+	/*Shared*/
+
+	"favorite": "Favorite",
+
+	 /*Navbar*/
+	"admin": "Admin",
+	"profile": "Profile",
+	"account": "Account",
+	"signout": "Sign out",
+	"signup": "Sign up",
+	"login": "Log in",
+	"login2": "Login",
+	"edit_profile": "Edit Profile",
+	"notifications": "Notifications",
+
+	/*Not Found*/
+	"not_found": "Nothing here.",
+
+
+	/*Dashboard*/
+	"add_post": "Add a Post",
+	"add_post_btn": "Add Post",
+	"add_post_modal": "Add with a modal",
+	"add_post_modal_btn": "Add a new post",
+	"edit_post": "Edit post",
+	"delete": "Delete",
+	"favorites": "Favorites",
+
+	/*Account*/
+	"account_details": "Account Details",
+	"delete_account": "Delete Account",
+	"delete_account_warn": "There's no coming back from this one",
+	"delete_account_warn2": "Are you sure you want to delete your account?",
+	"close": "Close",
+	"change_pswd": "Change Password",
+
+	/*Profile*/
+	"update": "Update",
+
+	/*Posts*/
+
+	"postTitle": "Title",
+	"postContent": "Content",
+	"postPicture": "Picture",
+	// "uploadLabel": "Choose File"
+	"profilePicture": "Profile Picture"
+
+
+	
+
+
+}
