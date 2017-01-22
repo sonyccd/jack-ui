@@ -6,7 +6,10 @@
 					{{> addPost}}
 					{{> favoritesSidebar}}
 				</div>
-				<div class="col-md-9">
+        <div class="col-md-3">
+          {{> addRobot}}
+        </div>
+				<div class="col-md-6">
 					{{> posts}}
 				</div>
 			</div>
@@ -30,6 +33,24 @@
 				</div>
 		</div>
 	</div>
+</template>
+
+<template name="addRobot">
+  <div class="template-add-post">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">{{_ "add_robot"}}</h3>
+      </div>
+      <div class="panel-body">
+        {{#autoForm id="add" collection="Robots" type="insert"}}
+          {{> afQuickField name="name"}}
+          {{> afQuickField name="rosip"}}
+          {{> afQuickField name="topics"}}
+          <button type="submit" class="btn btn-primary">{{_ "add_robot_btn"}}</button>
+        {{/autoForm}}
+      </div>
+    </div>
+  </div>
 </template>
 
 <template name="posts">

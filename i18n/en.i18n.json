@@ -43,6 +43,8 @@
 
 
 	/*Dashboard*/
+	"add_robot": "Add a Robot",
+	"add_robot_btn": "Add Robot",
 	"add_post": "Add a Post",
 	"add_post_btn": "Add Post",
 	"add_post_modal": "Add with a modal",

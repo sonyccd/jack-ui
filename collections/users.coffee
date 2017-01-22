@@ -1,25 +1,3 @@
-Schemas.Robot = new SimpleSchema(
-
-  name:
-    type:String
-
-  rosip:
-    label:"ROS IP Address"
-    type:String
-
-  topics:
-    type:Object
-    optional:true
-
-  "topics.imu":
-    label:"IMU"
-    type:String
-
-  "topics.gps":
-    label:"GPS"
-    type:String
-)
-
 Schemas.UserProfile = new SimpleSchema(
 
   picture:
@@ -63,10 +41,6 @@ Schemas.UserProfile = new SimpleSchema(
       geolocation: true
       searchBox: true
       autolocate: true
-
-  robot:
-    type: Schemas.Robot
-    optional:true
 )
 
 Schemas.User = new SimpleSchema(
