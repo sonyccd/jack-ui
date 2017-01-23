@@ -7,6 +7,7 @@
       icon: 'rocket'
       tableColumns: [
         {label:'Robot Name', name:'name'}
+        {label:'Owner', name:'owner'}
         {label:'ROS IP', name:'rosip'}
       ]
 		Posts:
