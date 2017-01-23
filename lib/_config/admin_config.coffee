@@ -1,6 +1,14 @@
+# TODO not loading posts and comments anymore need to fix that
 @AdminConfig =
 	name: Config.name
 	collections:
+    Robots:
+      color: 'green'
+      icon: 'rocket'
+      tableColumns: [
+        {label:'Robot Name', name:'name'}
+        {label:'ROS IP', name:'rosip'}
+      ]
 		Posts:
 			color: 'red'
 			icon: 'pencil'
@@ -10,7 +18,7 @@
 				{ label: 'User', name: 'author()', template: 'adminUserCell' }
 			]
 		Comments:
-			color: 'green'
+			color: 'orange'
 			icon: 'comments'
 			extraFields: ['doc', 'owner']
 			tableColumns: [
