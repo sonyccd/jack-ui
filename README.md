@@ -6,7 +6,7 @@ Jack UI
 
 Simple an intuitive for all ROS enabled field robots
 
-Thanks to [Ben Jones](https://github.com/yogiben) for the meteor boilerplate this is built on [meteor-starter](https://github.com/yogiben/meteor-starter)
+Thanks to [Ben Jones](https://github.com/yogiben) for the meteor boilerplate [meteor-starter](https://github.com/yogiben/meteor-starter) that this is built on.
 
 ### Setup ####
 
