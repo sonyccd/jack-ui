@@ -1,16 +1,11 @@
+#none of this works, really need to fix it at some point
+
 sudo: required
 language: node_js
 node_js:
-  - "0.10"
-
+- '0.12'
 before_install:
-  - "curl -L https://git.io/ejPSng | /bin/sh"
-
-env:
-  - CXX=g++-4.8
-addons:
-  apt:
-    sources:
-      - ubuntu-toolchain-r-test
-    packages:
-      - g++-4.8
+- curl https://install.meteor.com/ | sh
+services: mongodb
+script:
+- meteor --test --release velocity:METEOR@1.3
