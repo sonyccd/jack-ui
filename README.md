@@ -7,7 +7,6 @@ Jack UI
 
 ![Header](https://github.com/sonyccd/jack-ui/blob/master/readme/header_img.png)
 
-Simple an intuitive for all ROS enabled field robots
 
 Thanks to [Ben Jones](https://github.com/yogiben) for the meteor boilerplate [meteor-starter](https://github.com/yogiben/meteor-starter) that this is built on.
 
