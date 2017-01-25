@@ -16,6 +16,14 @@ Posts.allow
 
 Robots.allow
   insert: (userId, doc) ->
+    userId == doc.owner
+  update: (userId, doc) ->
+    userId == doc.owner
+  remove: (userId, doc) ->
+    userId == doc.owner
+
+Missions.allow
+  insert: (userId, doc) ->
     true
   update: (userId, doc) ->
     true

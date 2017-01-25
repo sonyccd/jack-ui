@@ -9,11 +9,18 @@
         <div class="col-md-3">
           {{> addRobot}}
         </div>
-				<div class="col-md-6">
-					{{> robots}}
-          {{> posts}}
-				</div>
+        <div class="col-md-3">
+          {{> addMission}}
+        </div>
 			</div>
+      <div class="row">
+        <div class="col-md-6">
+          {{> robots}}
+        </div>
+        <div class="col-md-6">
+          {{> posts}}
+        </div>
+      </div>
 		</div>
 	</div>
 </template>
@@ -48,6 +55,22 @@
           {{> afQuickField name="rosip"}}
           {{> afQuickField name="topics"}}
           <button type="submit" class="btn btn-primary">{{_ "add_robot_btn"}}</button>
+        {{/autoForm}}
+      </div>
+    </div>
+  </div>
+</template>
+
+<template name="addMission">
+  <div class="template-add-mission">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">{{_ "add_missions"}}</h3>
+      </div>
+      <div class="panel-body">
+        {{#autoForm id="addMission" collections="Missions" type="insert"}}
+          {{> afQuickField name="name"}}
+          <button type="submit" class="btn btn-primary">{{_ "add_mission_btn"}}</button>
         {{/autoForm}}
       </div>
     </div>
