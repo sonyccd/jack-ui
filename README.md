@@ -10,7 +10,6 @@
 Thanks to [Ben Jones](https://github.com/yogiben) for the meteor boilerplate [meteor-starter](https://github.com/yogiben/meteor-starter) that this is built on.
 
 ## Setup
-
 ```
 git clone https://github.com/sonyccd/jack-ui.git jack-ui
 cd jack-ui
