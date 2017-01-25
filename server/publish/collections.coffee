@@ -9,3 +9,6 @@ Meteor.publish 'attachments', ->
 
 Meteor.publish 'robots', ->
 	Robots.find()
+
+Meteor.publish 'missions',->
+	Missions.find()
