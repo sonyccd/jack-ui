@@ -18,6 +18,6 @@ meteor
 ```
 
 ## Technology
-Jack UI is built on some of the latest web technolgies. Leveraging many of the best open source tools.  
+Jack UI is built on some of the latest web technologies. Leveraging many of the best open source tools.
 
 ![logos](https://github.com/sonyccd/jack-ui/blob/master/readme/logos.png)
