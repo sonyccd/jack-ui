@@ -10,7 +10,8 @@
           {{> addRobot}}
         </div>
 				<div class="col-md-6">
-					{{> posts}}
+					{{> robots}}
+          {{> posts}}
 				</div>
 			</div>
 		</div>
@@ -55,12 +56,22 @@
 
 <template name="posts">
 	<div class="template-posts">
-		{{#each  posts}}
+		{{#each posts}}
 		{{> post}}
 		{{else}}
 		{{> noData}}
 		{{/each}}
 	</div>
+</template>
+
+<template name="robots">
+  <div class="template-robots">
+    {{#each robots}}
+      {{> robot}}
+    {{else}}
+      {{> noData}}
+    {{/each}}
+  </div>
 </template>
 
 <!--TODO add displaying robots-->
@@ -110,6 +121,28 @@
 				</div>
 		</div>
 	</div>
+</template>
+
+<template name="robot">
+  <div class="template-robot">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">
+          {{name}}
+        </h3>
+      </div>
+      <div class="panel-body">
+        <div class="media">
+          <a class="pull-left" href="#">
+            {{> avatar userId=owner shape="circle"}}
+          </a>
+          <div class="media-body">
+            <p>{{rosip}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
 
 <template name="favoritesSidebar">
