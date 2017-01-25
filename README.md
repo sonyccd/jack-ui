@@ -18,4 +18,16 @@ meteor
 ```
 
 ## Technology
-Jack UI is built on some of the latest web technolgies. Leveraging many
+Jack UI is built on some of the latest web technolgies. Leveraging many of the best open source tools.  
+
+###Meteor
+
+###MongoDB
+
+###BlazeJS
+
+###Bootstrap
+
+###Chat.js
+
+###Leaflet.js
