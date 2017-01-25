@@ -18,3 +18,4 @@ meteor
 ```
 
 ## Technology
+Jack UI is built on some of the latest web technolgies. Leveraging many
