@@ -23,11 +23,11 @@ Jack UI is built on some of the latest web technolgies. Leveraging many of the b
 ###Meteor
 ![Meteor](https://github.com/sonyccd/jack-ui/blob/master/readme/meteor.jpg)
 ###MongoDB
-
+![MongoDB](https://github.com/sonyccd/jack-ui/blob/master/readme/mongodb.png)
 ###BlazeJS
-
+![BlazeJS](https://github.com/sonyccd/jack-ui/blob/master/readme/blaze.png)
 ###Bootstrap
 
-###Chat.js
-
+###Chart.js
+![Chartjs](https://github.com/sonyccd/jack-ui/blob/master/readme/chartjs.png)
 ###Leaflet.js
