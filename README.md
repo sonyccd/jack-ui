@@ -21,7 +21,7 @@ meteor
 Jack UI is built on some of the latest web technolgies. Leveraging many of the best open source tools.  
 
 ###Meteor
-![Meteor](https://github.com/sonyccd/jack-ui/blob/master/readme/meteor.jpg | width=128)
+![Meteor](https://github.com/sonyccd/jack-ui/blob/master/readme/meteor.jpg)
 ###MongoDB
 ![MongoDB](https://github.com/sonyccd/jack-ui/blob/master/readme/mongodb.png)
 ###BlazeJS
