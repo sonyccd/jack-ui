@@ -5,16 +5,16 @@ Schemas.Missions = new SimpleSchema(
     type:String
 
   owner:
-    type:String
-    regEx:SimpleSchema.RegEx.Id
-    autoValue:->
+    type: String
+    regEx: SimpleSchema.RegEx.Id
+    autoValue: ->
       if this.isInsert
         Meteor.userId()
     autoform:
-      options:->
+      options: ->
         _.map Meteor.users.find().fetch(), (user)->
-          label:user.emails[0].address
-          value:user._id
+          label: user.emails[0].address
+          value: user._id
 )
 
 Missions.attachSchema(Schemas.Missions)
