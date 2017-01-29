@@ -1,7 +1,10 @@
 <template name="dashboard">
 	<div class="template-dashboard">
 		<div class="container">
-			<div class="row">
+      <div class="row">
+        {{>addBtnBar}}
+      </div>
+<!--			<div class="row">
 				<div class="col-md-3">
 					{{> addPost}}
 					{{> favoritesSidebar}}
@@ -10,19 +13,60 @@
           {{> addRobot}}
         </div>
         <div class="col-md-3">
-          {{> addMission}}
+          {{> addBar}}
         </div>
-			</div>
+			</div>-->
       <div class="row">
-        <div class="col-md-6">
-          {{> robots}}
+        <div class="col-md-4">
+          <div class="panel panel-default">
+            <div class="panel panel-heading">
+              Robots
+            </div>
+            <div class="panel-body">
+              {{>robots}}
+            </div>
+          </div>
         </div>
-        <div class="col-md-6">
-          {{> posts}}
+        <div class="col-md-4">
+          <div class="panel panel-default">
+            <div class="panel panel-heading">
+              Posts
+            </div>
+            <div class="panel panel-body">
+              {{>posts}}
+            </div>
+          </div>
         </div>
       </div>
 		</div>
 	</div>
+</template>
+
+<template name="addBtnBar">
+  <div class="well well-lg">
+    {{>addPostBtn}}
+    {{>addRobotBtn}}
+    {{>addMissionBtn}}
+  </div>
+</template>
+
+<template name="addPostBtn"><button class="btn btn-default">Add Post</button></template>
+<template name="addRobotBtn"><button class="btn btn-default">Add Robot</button></template>
+<template name="addMissionBtn"><button class="btn btn-default">Add Mission</button></template>
+
+<template name="postModal">
+  <div class="modal fade">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          {{>addMission}}
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
 
 <template name="addPost">
@@ -68,10 +112,15 @@
         <h3 class="panel-title">{{_ "add_mission"}}</h3>
       </div>
       <div class="panel-body">
-        {{#autoForm id="addMission" collections="Missions" type="insert"}}
-          {{> afQuickField name="name"}}
-          <button type="submit" class="btn btn-primary">{{_ "add_mission_btn"}}</button>
-        {{/autoForm}}
+        <div class="row">
+          {{#autoForm id="addMission" collections="Missions" type="insert"}}
+            {{> afQuickField name="name"}}
+            <button type="submit" class="btn btn-primary">{{_ "add_mission_btn"}}</button>
+          {{/autoForm}}
+        </div>
+        <div class="row">
+
+        </div>
       </div>
     </div>
   </div>
